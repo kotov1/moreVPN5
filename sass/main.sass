@@ -1,0 +1,631 @@
+@import "fonts"
+@import "vars"
+
+/*GENERAL STYLES START*/
+*
+	box-sizing: border-box
+	&:before, &:after
+		box-sizing: border-box
+
+body
+	max-width: 1920px
+	min-width: 320px
+	margin: 0 auto
+	font-size: 16px
+	position: relative
+	line-height: 1.4
+	overflow-x: hidden
+	opacity: 1
+	background-color: #fff
+	color: #212326
+
+
+ul
+	margin: 0
+	padding: 0
+	list-style-type: none
+
+.nowrap
+	white-space: nowrap
+
+/*GENERAL STYLES END*/
+
+
+
+.header
+	padding: 20px 0
+	background: url('../img/bg/bg1-sm.jpg') no-repeat 35% 0
+	&-link
+		font-family: $main_med_font
+		color: $title_color
+		&:hover
+			color: $title_color
+	&-btn
+		display: block
+		width: 156px
+		height: 42px
+		background: url('../img/header-btn.png') no-repeat 50% 50%
+		border: none
+		outline: none
+		cursor: pointer
+		&:active
+			transform: translate(1px, 1px)
+		&:focus
+			outline: none
+
+.logo-wrap
+	max-width: 105px
+	margin: 0 auto
+	width: 100%
+	overflow: hidden
+
+.page-heading
+	padding: 300px 0 0
+	&-text
+		max-width: 21rem
+		margin: 0 auto
+		font: 2em/1.3 $main_reg_font
+		text-align: center
+		color: $title_color
+	&-info
+		margin: .625rem 0
+		text-align: center
+		font: 300 1rem/1.4 "Roboto", sans-serif
+		color: #212326
+
+.ip
+	margin-top: .3125rem
+	&-address
+		color: #d1d6e0
+		font-family: $main_med_font	
+	&-status
+		display: inline-block
+		padding: 1px 13px
+		color: #fff
+		font: 14px $main_bold_font
+		text-transform: uppercase
+		background-color: #ff3674
+		border-radius: 30px
+
+
+.btn-wrap
+	padding: 10px 0
+	text-align: center
+.btn
+	display: inline-block
+	padding: 9px 60px
+	font: 14px $main_med_font
+	background-image: linear-gradient(90deg, #1b75bc, #00e0a7)
+	background-size: 101%
+	color: #fff
+	text-align: center
+	border-radius: 30px
+	text-transform: uppercase
+	transition: $trs
+	&:hover
+
+		transition: $trs
+	&:focus
+		box-shadow: none
+
+
+
+
+
+.reviewer
+	padding: 2rem 0
+	color: #212326
+	background-color: #fbfbfb
+
+	&-logo
+		margin-top: 20px
+		display: flex
+		justify-content: center
+		text-align: center
+		&-img
+			display: block
+			max-width: 100%
+			height: auto
+
+	&-blockquote
+		margin: 2.9em 0 0
+		font: italic 1.125em $sub_font
+		text-align: center
+
+	&-name
+		margin: .7rem 0 0
+		font-family: $sub_font
+		font-weight: 400
+		text-align: center
+		
+	&-position
+		margin: .3rem 0 0
+		font-family: $sub_font
+		font-weight: 300
+		display: flex
+		justify-content: center
+		line-height: 30px
+	&-company-logo
+		display: block
+		width: 86px
+		height: 27px
+		margin-left: 6px
+
+
+
+
+
+.description
+	padding: 3.125rem 0
+	&-title
+		color: #383c43
+		font: 1.5rem $main_reg_font
+		text-align: center
+
+	&-img
+		img
+			display: block
+			margin: 0 auto
+			max-width: 100%
+	&-subtitle
+		margin-top: 1rem
+		text-align: center
+		font: 1.25em $main_reg_font
+		color: $title_color
+	&-text
+		max-width: 290px
+		margin: 1rem auto 0
+		font: 300 1em/1.4 $sub_font
+		color: #212326
+
+
+
+
+
+
+
+
+
+.steps
+	padding: 1rem 0 4rem
+	.form-line
+		padding: 10px 0
+	.form-text
+		padding: .8rem 0 0
+		font: 1em $sub_cursive_font
+		color: #212326
+		text-align: center
+		&-btn
+			display: block
+			width: 220px
+			margin-top: 20px
+			font-family: $main_med_font
+	&-guarantee
+		margin-top: 10px
+		padding-left: 35px
+		background: url('../img/icons/guarantee.png') no-repeat 0 0
+		color: #383c43		
+	input
+		padding: 0.9rem .5rem 0.8rem 2rem
+		font: 16px $main_light_font
+		color: #383c43	
+		letter-spacing: 1px
+		&:focus
+			color: #383c43	
+		&::placeholder
+			text-transform: uppercase
+			font: 12px $main_light_font
+			color: #dadadb
+			letter-spacing: 2px
+			
+	.error+.error
+		margin: 0
+		display: inline-block
+		font: 12px $main_light_font
+		color: #ff3d4c
+		text-transform: uppercase
+
+.step
+	&-title
+		font: 1.875rem/1.2 $main_reg_font
+	&-info
+		margin: 1.4rem 0 0.7rem
+		font: 300 1rem $sub_font
+		color: #383c43
+		&-accent
+			font-weight: 500
+		a
+			color: #005cfe
+
+	&-accordion
+		margin-top: 1rem
+		.card
+			border: none
+			background-color: transparent
+		.card-body
+			padding-bottom: 0
+		.card-header
+			position: relative
+			padding: 0
+			background-color: transparent
+			&::before
+				content: ''
+				display: block
+				width: 10px
+				height: 10px
+				position: absolute
+				left: 20px
+				top: 48%
+				border-top: 2px solid $title_color
+				border-right: 2px solid $title_color
+				transform: rotate(45deg) translateY(-50%)
+				z-index: 0
+			&.opened
+				&::before
+					top: 35%
+					transform: rotate(135deg) translateY(-50%)
+
+		&-btn
+			width: 100%
+			margin-bottom: -1px
+			padding: 23px 20px 23px 50px
+			border: 1px solid rgba(0,0,0,.125)
+			outline: none
+			background-color: transparent
+			text-align: left
+			color: #202020
+			font: 1em $main_bold_font
+			text-transform: uppercase
+			letter-spacing: 1px
+			cursor: pointer
+			&:focus
+				outline: 2px solid #f7c04f
+				border: none
+			
+			img
+				display: none
+				margin-left: 18px
+
+.step2
+	&-sign
+		// font-family: $think_font
+		color: #383c43
+		text-align: center
+	input
+		margin: 20px 0 10px
+	.error+.error
+		transform: translateY(-5px)
+
+
+.step3
+	label:not(.error)
+		position: relative
+		font: 12px $main_med_font
+		color: #383c43	
+		text-transform: uppercase
+		letter-spacing: 1px
+	input
+		padding: 0.8rem 0.5rem 0.8rem 2rem	
+	a
+		color: #005cfe
+		font-family: $sub_font
+		&:hover
+			color: lighten(#005cfe, 5%)
+
+.tarrifs
+	position: relative
+
+	&-item
+		width: 275px
+		margin: 0 auto 20px
+		padding: 26px 10px 16px
+		text-align: center
+		background: #fff
+		position: relative
+		z-index: 1
+		border: 1px solid rgb(213, 213, 213)
+		border-radius: 2px
+		transition: all .2s
+		&:last-child
+			margin-bottom: 0!important
+		&:first-child
+			margin-top: 0!important
+		&.recommend, &:hover
+			margin: 26px auto
+			border-width: 4px
+			border-style: solid
+			border-image: linear-gradient(100deg, #1b75bc, #00e0a7) 1
+			cursor: pointer
+			transform: scale(1.05)
+			transition: all .2s
+			.tarrifs-description
+				color: #202020
+			.tarrifs-discount
+				color: #fd0047
+				font-family: $main_bold_font
+				transition: all .2s
+			.tarrifs-price-old
+				display: block		
+			.tarrifs-price
+				font-size: 58px
+				line-height: 1.3
+				transition: all .2s
+				color: #202020
+				.symbol
+					font-size: 30px
+					line-height: 58px
+				.period
+					font-size: 30px
+					line-height: 55px
+			.tarrifs-info
+				color: #202020
+				transition: all .2s
+			.tarrifs-guarantee
+				color: #b6b5b5
+				transition: all .2s
+			.tarrifs-purchase
+				padding: 12px 0
+				background-image: linear-gradient(90deg, #1b75bc, #00e0a7)
+				background-size: 101%
+				transition: all .2s
+
+	&-description
+		margin: 0
+		color: #bababa
+		font-family: $main_med_font
+	&-discount
+		margin: 5px 0 10px
+		font: 14px $main_med_font
+		color: #fd0047
+		color: #bababa
+		letter-spacing: 2px
+		text-transform: uppercase
+		transition: all .2s
+	&-price-old-wrap
+		min-height: 20px
+	&-price-old
+		margin: 0
+		font-family: $main_light_font
+		color: #b6b5b5
+		position: relative
+		&::before
+			content: ""
+			position: absolute
+			left: 50%
+			top: 50%
+			display: block
+			width: 3.5em
+			height: 1px
+			background-color: rgba(#b6b5b5, .8)
+			transform: translate(-50%, -50%)
+	&-price
+		margin: -5px 0 0
+		font: 50px/1.3 $main_med_font
+		color: #bbbaba
+		.symbol
+			position: relative
+			left: -5px
+			font-size: 22px
+			line-height: 42px
+			vertical-align: top
+		.period
+			font-size: 22px
+			line-height: 44px
+			vertical-align: bottom
+	&-info, &-guarantee
+		font: 400 12px $sub_font
+		color: #bbbaba
+		transition: all .2s
+	&-info
+		margin: 0
+	&-guarantee
+		margin: 7px 0 0
+	&-purchase
+		margin-top: 16px
+		padding: 9px 0
+		width: 210px
+		text-align: center
+		text-transform: uppercase
+		background: #bababa
+		transition: all .2s
+
+		
+
+
+.my-tooltip 
+	position: absolute
+	top: -3px
+	right: -30px
+	width: 19px
+	height: 19px
+	border-radius: 50%
+	background: url('../img/icons/input-icons-set.png') no-repeat
+	background-position: -20px 0
+
+.form-divider
+	border-top: 1px solid rgba(0,0,0,.125)
+	label
+		padding: 1rem 0 .5rem
+
+.step-form-btn
+	width: 220px
+	margin-top: 10px
+	margin-bottom: 20px
+	padding: 9px 45px
+	background-color: #01356b
+	text-transform: uppercase
+	font-size: 14px
+	&:hover
+		background-color: lighten(#01356b, 5%)
+
+.step3-guarantee, .step3-confirm
+	font-size: 14px
+
+.step3-guarantee 
+	color: #333
+	font-family: $sub_font
+.step3-confirm
+	margin-top: 15px
+	color: #969696
+	font-family: $sub_font
+
+.collapse-form
+	padding: 1rem 0
+
+
+
+
+
+
+
+
+
+
+
+.advantages
+	padding: 2rem 0
+	background: url("../img/bg/bg2-sm.jpg") no-repeat 74% 50%
+	background-size: cover
+	&-title
+		padding: 20px 10px 10px 40px
+		font: 1.875em/1.7 "BrandonLight", $main_reg_font
+	&-logo
+		max-width: 150px
+		transform: translateY(-5px)
+	&-list
+		margin: 0
+		padding: 2.4rem 0 1.9rem
+		list-style-type: none
+		font: 1.5em "BrandonRegularItalic", $sub_cursive_font
+		
+		&-item
+			margin-bottom: 5px
+			padding-left: 45px
+			background: url('../img/icons/list-icon.png') no-repeat 0 50%
+
+
+
+
+
+
+
+.endorsment
+	padding: 3rem 0
+	color: $title_color
+	&-title
+		margin-bottom: 4.5rem
+		color: $title_color
+		font: 1.625rem $main_reg_font
+		text-align: center
+		
+	&-post
+		max-width: 550px
+		display: flex
+		flex-direction: column
+		margin: 0 auto 3.6rem
+		padding: 4.25rem 1.5rem 2rem
+		position: relative
+		background-color: #fff
+		color: #202020
+		border-radius: 4px
+		box-shadow: 0px 7px 53.1px 5.9px rgba(0, 0, 0, 0.08)
+		text-align: center
+	&-img-wrap
+		width: 110px
+		height: 110px
+		position: absolute
+		top: 0
+		left: 50%
+		transform: translate(-50%, -23%)
+		border-radius: 50%
+		background-color: rgb(148, 155, 163)
+		overflow: hidden
+	&-img
+		position: relative
+	&-name
+		margin-top: 1.8rem
+		font: 1.125em $main_med_font
+	&-text
+		margin-top: 1rem
+		font: 400 1rem/1.5 $sub_font
+.endorsment1-img
+	left: -105px
+	top: -10px
+.endorsment2-img
+	left: -4px
+.endorsment3-img
+	top: -18px
+	left: -27px
+
+
+
+
+
+.howTo
+	background-color: #1b75bc
+	background-image: linear-gradient(90deg, #1b75bc, #00e0a7)
+	color: #fff
+	&-inner
+		padding: 4rem 0 3rem
+		border-bottom: 1px solid #fff
+	&-title
+		font: 1.625em $main_light_font
+		line-height: 1.3
+	&-text
+		margin: 1.5rem 0
+		line-height: 1.9
+		font-family: $sub_font
+		font-weight: 300
+	&-link
+		display: block
+		width: 140px
+		height: 43px
+		margin: 0 auto
+		background-repeat: no-repeat
+		&-appStore
+			margin-bottom: 15px
+			background-image: url('../img/app-store-black.png')
+		&-googlePlay
+			background-image: url('../img/google-play-black.png')
+
+
+
+.footer
+	padding: 1.3rem 0 2rem
+	background-color: #1b75bc
+	background-image: linear-gradient(90deg, #1b75bc, #00e0a7)
+	font-family: $main_light_font
+	color: #fff
+	&-list-title
+		padding: .55rem 0
+		text-decoration: underline
+		text-transform: uppercase
+	&-list
+		margin: 0
+		padding: 0
+		list-style-type: none
+		a
+			display: block
+			padding: .1rem 0
+			color: inherit
+
+	&-payment-logos
+		max-width: 320px
+		margin: 1.5rem auto
+	&-copy, &-support
+		font-size: .75em
+	&-support
+		color: #4a7ed9
+		a
+			&:hover
+				color: #8abcf1
+
+
+
+
+
+
+
+
+
+@import "media"
