@@ -765,7 +765,7 @@ ul {
   list-style-type: none;
 }
 .footer-list a {
-  display: block;
+  display: inline-block;
   padding: 0.1rem 0;
   color: inherit;
 }
@@ -783,9 +783,6 @@ ul {
   color: #8abcf1;
 }
 
-@media only screen and (min-width: 380px) {
-  /* */
-}
 @media only screen and (min-width: 480px) {
   .step-title br {
     display: none;
@@ -909,10 +906,12 @@ ul {
 
   /* */
 }
-@media only screen and (min-width: 992px) {
-  /* */
-}
 @media only screen and (min-width: 1200px) {
+  .header {
+    background: url("../img/bg/bg1-lg.jpg") no-repeat 50% 0;
+    background-size: 100%;
+  }
+
   .page-heading {
     padding: 94px 0;
   }
@@ -921,12 +920,74 @@ ul {
     text-align: right;
   }
 
+  .page-heading-info {
+    margin-top: 2.3rem;
+  }
+
+  .header .btn-wrap {
+    margin-top: 1.7rem;
+  }
+
+  .reviewer-blockquote {
+    margin: 1.7rem auto 0.7rem;
+    max-width: 31.25rem;
+  }
+
+  .description {
+    padding: 4.125rem 0;
+  }
+  .description-title {
+    font-size: 2.375rem;
+  }
   .description-text {
     min-width: auto;
+  }
+
+  .steps {
+    padding: 3rem 0 4rem;
+  }
+
+  .tarrifs-item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 305px;
+            flex: 0 0 305px;
+    max-width: 305px;
+    margin: 0 10px;
+  }
+  .tarrifs-item.recommend, .tarrifs-item:hover {
+    margin: 0 17px;
+  }
+
+  .steps .form-text {
+    padding: 0.8rem 135px 0;
+  }
+
+  .endorsment-post {
+    padding: 4.25rem 1rem 2rem;
+  }
+
+  .howTo-title {
+    font-size: 2.375rem;
+  }
+
+  .footer-payment-logos {
+    margin: 1.5rem 0 1rem auto;
+  }
+  .footer-payment-logos img {
+    margin-left: 15px;
   }
 
   /* */
 }
 @media only screen and (min-width: 1400px) {
+  .header {
+    background: url(../img/bg/bg1-lg.jpg) no-repeat 1% 0;
+    background-size: 108%;
+  }
+
+  .advantages {
+    background-size: cover;
+  }
+
   /* */
 }

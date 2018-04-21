@@ -134,7 +134,7 @@ $(function() {
 					minlength: 3
 				},
 				inputCoupon1: {
-					minlength: 16
+					minlength: 19
 				}	
 			},
 			messages: {
@@ -183,7 +183,7 @@ $(function() {
 					minlength: 3
 				},
 				inputCoupon2: {
-					minlength: 16
+					minlength: 19
 				}	
 			},
 			messages: {
@@ -232,7 +232,7 @@ $(function() {
 					minlength: 3
 				},
 				inputCoupon3: {
-					minlength: 16
+					minlength: 19
 				}	
 			},
 			messages: {
