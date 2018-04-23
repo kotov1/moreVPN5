@@ -1265,6 +1265,7 @@ ul {
 
   .thanks-page {
     min-height: 100vh;
+    height: 1px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
