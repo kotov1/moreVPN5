@@ -74,18 +74,14 @@ ul {
 }
 
 /*GENERAL STYLES END */
-.header {
-  padding: 20px 0;
-  background: url("../img/bg/bg1-sm.jpg") no-repeat 35% 0;
-}
-.header-link {
+.main-page .header-link {
   font-family: "BrandonMedium", "Roboto", sans-serif;
   color: #383c43;
 }
-.header-link:hover {
+.main-page .header-link:hover {
   color: #383c43;
 }
-.header-btn {
+.main-page .header-btn {
   display: block;
   width: 156px;
   height: 42px;
@@ -94,12 +90,17 @@ ul {
   outline: none;
   cursor: pointer;
 }
-.header-btn:active {
+.main-page .header-btn:active {
   -webkit-transform: translate(1px, 1px);
           transform: translate(1px, 1px);
 }
-.header-btn:focus {
+.main-page .header-btn:focus {
   outline: none;
+}
+
+.header {
+  padding: 20px 0;
+  background: url("../img/bg/bg1-sm.jpg") no-repeat 35% 0;
 }
 
 .logo-wrap {
@@ -769,6 +770,9 @@ ul {
   padding: 0.1rem 0;
   color: inherit;
 }
+.footer-info {
+  width: 100%;
+}
 .footer-payment-logos {
   max-width: 320px;
   margin: 1.5rem auto;
@@ -783,6 +787,360 @@ ul {
   color: #8abcf1;
 }
 
+.thanks-page .header-link, .payment-page .header-link {
+  color: #fff;
+}
+.thanks-page .header-link:hover, .payment-page .header-link:hover {
+  color: #fff;
+}
+.thanks-page .header-btn, .payment-page .header-btn {
+  display: block;
+  width: 140px;
+  height: 40px;
+  text-align: center;
+  border: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 30px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.thanks-page .header-btn:hover, .payment-page .header-btn:hover {
+  background-color: #ff3d4c;
+  border-color: #ff3d4c;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.thanks-page .header-btn:active, .payment-page .header-btn:active {
+  -webkit-transform: translate(1px, 1px);
+          transform: translate(1px, 1px);
+}
+.thanks-page .header-btn:focus, .payment-page .header-btn:focus {
+  outline: none;
+}
+.thanks-page .footer, .payment-page .footer {
+  padding: 0;
+}
+.thanks-page .footer-inner, .payment-page .footer-inner {
+  padding: 1.3rem 0 2rem;
+  border-top: 1px solid #fff;
+}
+
+.thanks-page {
+  background-color: #1b75bc;
+  background-image: url("../img/bg/thanks.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+}
+.thanks-page .header {
+  background: none;
+  position: relative;
+  min-height: 415px;
+}
+.thanks-page .bottom-line {
+  padding-top: 2rem;
+}
+.thanks-page .footer {
+  background: none;
+}
+.thanks-page .footer-info {
+  margin-top: 1rem;
+  text-align: center;
+}
+.thanks-page .footer-payment-logos {
+  margin: 1rem auto;
+}
+.thanks-page .footer-payment-logos img {
+  max-width: 80%;
+}
+.thanks-page .footer-list-title {
+  padding: 0.4rem 0;
+}
+.thanks-page .footer-list a {
+  padding: 0.3rem 0;
+}
+.thanks-page .howTo-link {
+  height: 36px;
+  width: 115px;
+  background-size: 100%;
+}
+.thanks-page .page-heading {
+  margin: 0 !important;
+  padding: 2rem 0 !important;
+  text-align: center;
+}
+.thanks-page .info {
+  overflow-x: hidden;
+}
+.thanks-page .info-title {
+  margin-bottom: 2rem;
+  font: 300 1.125rem "Roboto", sans-serif;
+  color: #262527;
+  text-align: center;
+}
+.thanks-page .info-device {
+  font: 1.125rem "BrandonRegular", "Roboto", sans-serif;
+  color: #161616;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.thanks-page .info-device-descr {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #161616;
+}
+.thanks-page .info-os {
+  padding: 1rem;
+}
+.thanks-page .info-os-icon {
+  display: inline-block;
+  width: 55px;
+  height: 55px;
+  background: url("../img/icons/os-sprite.png") no-repeat;
+}
+.thanks-page .info-os-andr {
+  margin-right: 15px;
+  background-position: 0 0;
+}
+.thanks-page .info-os-ios {
+  background-position: -64px 0;
+}
+.thanks-page .info-os-win {
+  margin-right: 15px;
+  background-position: -127px 0;
+}
+.thanks-page .info-os-app {
+  background-position: -190px 0;
+}
+.thanks-page .faq {
+  padding: 2rem 0;
+  color: #fff;
+}
+.thanks-page .faq-title {
+  display: inline-block;
+  position: relative;
+  font: 20px "BrandonRegular", "Roboto", sans-serif;
+}
+.thanks-page .faq-list {
+  padding-left: 1rem;
+  list-style-type: disc;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+.thanks-page .faq-list .faq-link {
+  color: rgba(255, 255, 255, 0.8);
+}
+.thanks-page .faq-link {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 1rem;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+.thanks-page .faq-link:hover {
+  text-decoration: none;
+}
+.thanks-page .faq-link::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  visibility: hidden;
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.thanks-page .faq-link:hover::after {
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.payment-page {
+  min-height: 100vh;
+  height: 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: url(../img/bg/thanks/lg-bg.jpg) no-repeat !important;
+  background-size: cover !important;
+}
+.payment-page .footer {
+  margin-top: auto;
+  background-color: transparent;
+}
+
+.payment-wait {
+  width: 430px;
+  min-height: 280px;
+  min-width: 290px;
+  position: fixed;
+  top: 32%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.payment-wait-outer, .payment-wait-inner {
+  margin: 0 auto;
+  position: relative;
+  color: #fff;
+  text-align: center;
+  border-radius: 50%;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.payment-wait-outer {
+  width: 28px;
+  height: 28px;
+}
+
+.payment-wait-inner {
+  border: 2px solid #fff;
+  width: 28px;
+  height: 28px;
+}
+
+.payment-wait-outer::before,
+.payment-wait-inner::before,
+.payment-wait-inner::after {
+  content: "";
+  position: absolute;
+  border: 5px solid #fff;
+  left: -20px;
+  right: -20px;
+  top: -20px;
+  bottom: -20px;
+  border-radius: 50%;
+  -webkit-animation: pulse 2.4s linear infinite;
+          animation: pulse 2.4s linear infinite;
+  opacity: 0;
+}
+
+.payment-wait-inner::after {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+
+.payment-wait-outer::before {
+  -webkit-animation-delay: 1.6s;
+          animation-delay: 1.6s;
+}
+
+.payment-wait-outer::after {
+  content: "";
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: rgba(1, 52, 107, 0.5);
+  border-radius: 50%;
+  display: block;
+  width: 40px;
+  height: 5px;
+}
+
+.payment-wait-text {
+  margin-top: 60px;
+  font: 400 14px "Roboto", sans-serif;
+  text-align: center;
+  color: #323232;
+}
+.payment-wait-text-accent {
+  text-transform: uppercase;
+  color: #00faa5;
+}
+
+.payment-complete {
+  display: none;
+  width: 13px;
+  height: 10px;
+  margin: 0 auto;
+  background: url("../img/icons/complete.png") no-repeat 50% 50%;
+}
+
+.payment-wait.completed .payment-wait-outer, .payment-wait.completed .payment-wait-inner {
+  background-color: #00faa5;
+  border-color: #00faa5;
+}
+.payment-wait.completed .payment-wait-outer::before,
+.payment-wait.completed .payment-wait-inner::before,
+.payment-wait.completed .payment-wait-inner::after {
+  border-color: #00faa5;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+.payment-wait.completed .payment-complete {
+  display: inline-block;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    opacity: 0;
+    border-width: 4px;
+  }
+  50% {
+    opacity: 1;
+    border-width: 1px;
+  }
+  100% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    opacity: 0;
+    border-width: 0;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    opacity: 0;
+    border-width: 4px;
+  }
+  50% {
+    opacity: 1;
+    border-width: 1px;
+  }
+  100% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    opacity: 0;
+    border-width: 0;
+  }
+}
 @media only screen and (min-width: 480px) {
   .step-title br {
     display: none;
@@ -904,6 +1262,23 @@ ul {
     margin-right: 5px;
   }
 
+  .thanks-page {
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .thanks-page .footer-inner {
+    padding: 2rem 0;
+  }
+
   /* */
 }
 @media only screen and (min-width: 1200px) {
@@ -947,6 +1322,10 @@ ul {
     padding: 3rem 0 4rem;
   }
 
+  .tarrifs {
+    min-height: 320px;
+    height: 1px;
+  }
   .tarrifs-item {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 305px;
@@ -977,6 +1356,23 @@ ul {
     margin-left: 15px;
   }
 
+  .howTo-link-appStore {
+    margin-bottom: 0;
+  }
+
+  .thanks-page .footer-payment-logos {
+    margin: 1rem 0 1rem auto;
+  }
+  .thanks-page .footer-payment-logos img {
+    max-width: 80%;
+  }
+  .thanks-page .footer-list-title {
+    padding: 0.4rem 0;
+  }
+  .thanks-page .footer-list a {
+    padding: 0.3rem 0;
+  }
+
   /* */
 }
 @media only screen and (min-width: 1400px) {
@@ -987,6 +1383,10 @@ ul {
 
   .advantages {
     background-size: cover;
+  }
+
+  .thanks-page .bottom-line {
+    padding-top: 5rem;
   }
 
   /* */

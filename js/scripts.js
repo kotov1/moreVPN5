@@ -259,6 +259,16 @@ $(function() {
 				},
 			}
 		});
+
+
+
+	$('.js-redirect').click(function(event) {
+		event.preventDefault;
+		console.log('cl');
+		if($(this).closest('form').valid()) {
+			location.replace("payment.html");
+		}
+	});
 	
 
 });
