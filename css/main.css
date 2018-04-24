@@ -764,6 +764,7 @@ ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  font-size: 14px;
 }
 .footer-list a {
   display: inline-block;
@@ -871,6 +872,7 @@ ul {
   margin: 0 !important;
   padding: 2rem 0 !important;
   text-align: center;
+  font: 2.25rem/1.2 "BrandonRegular", "Roboto", sans-serif;
 }
 .thanks-page .info {
   overflow-x: hidden;
@@ -1277,6 +1279,9 @@ ul {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
+  .thanks-page .page-heading {
+    font-size: 2.8125rem;
+  }
   .thanks-page .footer-inner {
     padding: 2rem 0;
   }
@@ -1285,8 +1290,8 @@ ul {
 }
 @media only screen and (min-width: 1200px) {
   .header {
-    background: url("../img/bg/bg1-lg.jpg") no-repeat 50% 0;
-    background-size: 100%;
+    background: #fbfbfb url("../img/bg/bg1-lg.jpg") no-repeat 50% 0;
+    background-size: cover;
   }
 
   .page-heading {
@@ -1379,8 +1384,8 @@ ul {
 }
 @media only screen and (min-width: 1400px) {
   .header {
-    background: url(../img/bg/bg1-lg.jpg) no-repeat 1% 0;
-    background-size: 108%;
+    background: #fbfbfb url(../img/bg/bg1-lg.jpg) no-repeat 1% 0;
+    background-size: cover;
   }
 
   .advantages {
