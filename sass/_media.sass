@@ -39,7 +39,7 @@
 			max-width: 225px
 			min-height: 280px
 			margin: 0 6px
-			&.recommend, &:hover
+			&.recommend
 				margin: 0 12px
 			&:last-child
 				margin-right: 0!important
@@ -49,13 +49,30 @@
 		&-purchase
 			width: 90%
 
+
+
 	.step-title
 		br
 	.step-form-btn
 		margin-bottom: 0
-	.step-accordion-btn-text
-		display: inline-block
-		min-width: 115px
+	.step3-guarantee
+		padding: 10px 0 10px 45px
+		position: relative
+		&::before
+			content: ''
+			width: 37px
+			height: 32px
+			position: absolute
+			left: 0
+			top: 0
+			background: url('../img/icons/7guarantee.svg') no-repeat 50% 50%
+			z-index: 0
+	.step-accordion-btn
+		&-text
+			display: inline-block
+			min-width: 115px
+		img
+			display: inline-block
 
 
 	.reviewer
@@ -149,7 +166,7 @@
 			flex: 0 0 305px
 			max-width: 305px
 			margin: 0 10px
-			&.recommend, &:hover
+			&.recommend
 				margin: 0 17px
 
 	.steps .form-text 
