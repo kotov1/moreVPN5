@@ -164,6 +164,27 @@ ul {
     transition: all 0.5s;
   }
 }
+.main-page.safari .header-btn {
+  position: relative;
+  display: block;
+  width: 156px;
+  height: 42px;
+  background: url("../img/header-btn.png") no-repeat 50% 50%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.main-page.safari .header-btn:active {
+  top: 1px;
+  left: 1px;
+}
+.main-page.safari .header-btn:focus {
+  outline: none;
+}
+.main-page.safari .header-btn::before, .main-page.safari .header-btn::after {
+  display: none;
+}
+
 .header {
   padding: 20px 0;
   background: url("../img/bg/bg1-sm.jpg") no-repeat 35% 0;

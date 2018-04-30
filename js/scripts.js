@@ -1,7 +1,13 @@
 
 $(function() {
 
+	var isSafari = !!navigator.userAgent.match(/Version\/[\d\.]+.*Safari/);
 
+	if(!isSafari) {
+		$('.main-page').addClass('safari');
+	}
+
+	
 	$('.card-header').click(function() {
 		if ($(this).hasClass('opened')) {
 			$(this).removeClass('opened');
